@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="scripts/scripts.js"></script>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="icon" icon type="image/x-icon" href="../images/favicon.ico">
+
+  <title>Portfolio Project</title>
+  </head>
+  <body class="home">
+    <div class="topnav" id="myTopnav">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="resources.html">Tools</a>
+      <a href="game.html" class="active">Game</a>
+      <a href="web.html">Web Stuff</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="startGame()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <script async src="https://cse.google.com/cse.js?cx=71c863e58907e4b86">
+    </script>
+    <div class="gcse-search"></div>
+    <div class="main-content">
+      
+        <h1>Hangman Game</h1>
+        <h2>This is currently my magnum opus</h2>
+        <button  type="button" class="button button--New-game" id="hangman-new-game" onclick="startGame()">New Game</button>
+          
+
+
+        
+
+      <div class="hangman-game">
+        <p class="hangman-game--word" id="hangman-word">Lives: <span id="lives-text"></span></p>
+        <p class="hangman-game--guessed-letters">Word: <span id="guessed-word"></span></p>
+        <p class="hangman-game--lives-left">Guessed letters: <span id="guessed-letters"></span></p>
+        <label for="character-guess">Guess a Character: </label><input type="text" minlength="1" maxlength="1" id="character-guess">
+        <button type="button" id="submit-guess" onclick="guessChar()">Submit Guess</button>
+      </div>
+    </div>
+    <div class="page-end-note">
+      <p></p>
+    </div>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>
