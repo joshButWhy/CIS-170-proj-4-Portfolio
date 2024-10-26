@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="scripts/scripts.js"></script>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="icon" icon type="image/x-icon" href="../images/favicon.ico">
+
+  <title>Portfolio Project</title>
+</head>
+
+<body class="hangman">
+  <div class="main-content">
+
+    <h1>Hangman Game</h1>
+    <!--TODO: Basically everything except the basic functionality. To be more specific: make sure everything is properly reseted among starting new game, add heart icons to show lives (try to include an animation for losing a heart), more words, don't except numbers, use css to make things not ugly and arrange the pieces of the game on the page, toggleable onscreen keyboard to submit guesses, include greyed out and greened labels for wrongly guessed and correctly guessed letters respectivly. 
+        
+        OPTIONAL: dark mode, settings (change between using a button to submit guess or auto guessing on character entry)-->
+    <h2>This is currently my magnum opus</h2>
+    <button type="button" class="button button--New-game" id="hangman-new-game" onclick="startGame()">New Game</button>
+
+
+
+
+
+    <div class="hangman-game">
+      <p class="hangman-game--word" id="hangman-word">Lives: <span id="lives-text"></span></p>
+      <p class="hangman-game--guessed-letters">Word: <span id="guessed-word"></span></p>
+      <p class="hangman-game--lives-left">Guessed letters: <span id="guessed-letters"></span></p>
+      <label for="character-guess">Guess a Character: </label><input type="text" minlength="1" maxlength="1"
+        id="character-guess">
+      <button type="button" id="submit-guess" onclick="guessChar()">Submit Guess</button>
+    </div>
+  </div>
+  <div class="page-end-note">
+    <p></p>
+  </div>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
